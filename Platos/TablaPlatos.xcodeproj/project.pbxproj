@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0816A8F01F7212820057E46F /* MetodoPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816A8EF1F7212820057E46F /* MetodoPagoViewController.swift */; };
 		08EB4A001F68783C00D1D106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EB49FF1F68783C00D1D106 /* AppDelegate.swift */; };
 		08EB4A021F68783C00D1D106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EB4A011F68783C00D1D106 /* ViewController.swift */; };
 		08EB4A051F68783C00D1D106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08EB4A031F68783C00D1D106 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0816A8EF1F7212820057E46F /* MetodoPagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetodoPagoViewController.swift; sourceTree = "<group>"; };
 		08EB49FC1F68783C00D1D106 /* TablaPlatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablaPlatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EB49FF1F68783C00D1D106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08EB4A011F68783C00D1D106 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0816A8F11F7212910057E46F /* Pedido */ = {
+			isa = PBXGroup;
+			children = (
+				08F258FD1F68BDC0007B8591 /* DetalleControler.swift */,
+				0816A8EF1F7212820057E46F /* MetodoPagoViewController.swift */,
+			);
+			name = Pedido;
+			sourceTree = "<group>";
+		};
 		08EB49F31F68783B00D1D106 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +78,7 @@
 		08EB49FE1F68783C00D1D106 /* TablaPlatos */ = {
 			isa = PBXGroup;
 			children = (
+				0816A8F11F7212910057E46F /* Pedido */,
 				08EB49FF1F68783C00D1D106 /* AppDelegate.swift */,
 				08EB4A011F68783C00D1D106 /* ViewController.swift */,
 				08EB4A121F68796600D1D106 /* entities */,
@@ -75,7 +87,6 @@
 				08EB4A081F68783C00D1D106 /* LaunchScreen.storyboard */,
 				08EB4A0B1F68783C00D1D106 /* Info.plist */,
 				08EB4A161F687A5100D1D106 /* Plato.swift */,
-				08F258FD1F68BDC0007B8591 /* DetalleControler.swift */,
 			);
 			path = TablaPlatos;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 			files = (
 				08F258FE1F68BDC0007B8591 /* DetalleControler.swift in Sources */,
 				08EB4A171F687A5100D1D106 /* Plato.swift in Sources */,
+				0816A8F01F7212820057E46F /* MetodoPagoViewController.swift in Sources */,
 				08EB4A021F68783C00D1D106 /* ViewController.swift in Sources */,
 				08EB4A001F68783C00D1D106 /* AppDelegate.swift in Sources */,
 			);

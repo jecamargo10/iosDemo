@@ -8,6 +8,8 @@
 import AFNetworking
 import UIKit
 
+var metodoSeleccionado: String = "Efectivo"
+
 class DetalleControler: UIViewController {
     @IBAction func cerrar(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -56,7 +58,10 @@ class DetalleControler: UIViewController {
             alertController.addAction(volverAction)
             self.present(alertController,animated: true){}
             
-        }){(task: URLSessionDataTask?, error: Error) in
+        }){
+            (task: URLSessionDataTask?, error: Error) in
+            
+            self.showAlert(title: "Error en solicitud", message: error.localizedDescription, closeButtonTitle: "Cerrar")
         }
         
         
@@ -90,7 +95,21 @@ class DetalleControler: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var labelMetodoPago: UILabel!
 
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        labelMetodoPago.text = "Pago con " + metodoSeleccionado
+    }
+    
+    @IBAction func cambiarMetodoPago(_ sender: UIButton)
+    {
+        self.performSegue(withIdentifier: "GoToMetodoPago",sender: self)
+   
+        
+    }
     /*
     // MARK: - Navigation
 
